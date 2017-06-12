@@ -15,6 +15,7 @@ Supported Platforms
 
 - Windows 7
 - Windows 8
+- Windows 10
 - Ubuntu 14.10
 
 Install on Windows
@@ -86,9 +87,9 @@ DATADIR = "pocketsphinx/test/data"
 
 # Create a decoder with certain model
 config = Decoder.default_config()
-config.set_string('-hmm', path.join(MODELDIR, 'en-us/en-us'))
-config.set_string('-lm', path.join(MODELDIR, 'en-us/en-us.lm.bin'))
-config.set_string('-dict', path.join(MODELDIR, 'en-us/cmudict-en-us.dict'))
+config.set_string('-hmm', path.join(MODELDIR, 'en-us'))
+config.set_string('-lm', path.join(MODELDIR, 'en-us.lm.bin'))
+config.set_string('-dict', path.join(MODELDIR, 'cmudict-en-us.dict'))
 decoder = Decoder(config)
 
 # Decode streaming data.
