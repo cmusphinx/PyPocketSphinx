@@ -150,7 +150,7 @@ setup(
     ext_modules=[
         Extension(
             name='sphinxbase._sphinxbase',
-            sources=sb_sources,
+            sources=sorted(sb_sources),
             swig_opts=sb_swig_opts,
             include_dirs=sb_include_dirs,
             libraries=libraries,
@@ -159,7 +159,7 @@ setup(
         ),
         Extension(
             name='pocketsphinx._pocketsphinx',
-            sources=ps_sources,
+            sources=sorted(ps_sources),
             swig_opts=ps_swig_opts,
             include_dirs=sb_include_dirs + ps_include_dirs,
             libraries=libraries,
