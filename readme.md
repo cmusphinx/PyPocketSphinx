@@ -54,18 +54,19 @@ Install on Ubuntu
 - swig
 - git
 - libpulse-dev
+- libasound2-dev
 
 ### Install
 
 ```bash
-sudo apt-get install -y python python-dev python-pip build-essential swig git libpulse-dev
+sudo apt-get install -y python python-dev python-pip build-essential swig git libpulse-dev libasound2-dev
 sudo pip install pocketsphinx
 ```
 
 or
 
 ```bash
-sudo apt-get install -y python python-dev python-pip build-essential swig git
+sudo apt-get install -y python python-dev python-pip build-essential swig git libasound2-dev
 git clone --recursive https://github.com/cmusphinx/pocketsphinx-python/
 cd pocketsphinx-python
 sudo python setup.py install
