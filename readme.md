@@ -73,6 +73,7 @@ sudo python setup.py install
 
 Basic usage
 -----------
+NOTE: when pocketsphinx is installed via pip the model files and test data are not loaded when running the following script, Thus clone [pocketsphinx](https://github.com/cmusphinx/pocketsphinx.git) in the same directory, where this script is executed.
 
 ```python
 #!/usr/bin/env python
